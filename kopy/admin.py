@@ -11,6 +11,7 @@ class CopyAdminForm(ModelForm):
     #text = CharField(widget=CKEditorWidget())
     class Meta:
         model = Copy
+        fields = ['key', 'text']
 
 class CopyAdmin(admin.ModelAdmin):
     list_display = ['key', 'text']
